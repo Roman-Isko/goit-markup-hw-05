@@ -403,6 +403,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer-container">
         <div class="div">
@@ -416,39 +417,62 @@
         </div>
         <div class="soc">
           <p class="paragraph">Social media</p>
-          <ul class="soc-list">
-            <li class="soc-item">
-              <a href="" class="soc-link">
-                <svg class="soc-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-item">
-              <a href="" class="soc-link">
-                <svg class="soc-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-item">
-              <a href="" class="soc-link">
-                <svg class="soc-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-item">
-              <a href="" class="soc-link">
-                <svg class="soc-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer-div">
+            <ul class="soc-list">
+              <li class="soc-item">
+                <a href="" class="soc-link">
+                  <svg class="soc-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="soc-link">
+                  <svg class="soc-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="soc-link">
+                  <svg class="soc-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="soc-link">
+                  <svg class="soc-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="form-div">
+              <p class="form-paragraph">Subscribe</p>
+              <form class="footer-form">
+                <label aria-label="footer-email" class="footer-label">
+                  <input
+                    type="email"
+                    name="footer-email"
+                    id=""
+                    placeholder="E-mail"
+                    class="footer-input"
+                  />
+                </label>
+                <button type="submit" class="footer-btn">
+                  Subscribe
+                  <svg class="subscribe-tg" width="24" height="20">
+                    <use href="./images/icons.svg#icon-TG"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
@@ -494,7 +518,7 @@
             <label for="user-email" class="modal-label">Email</label>
             <div class="input-wrap">
               <input
-                type="emailmail"
+                type="email"
                 class="modal-input"
                 name="user-email"
                 required
@@ -506,14 +530,32 @@
               </svg>
             </div>
           </div>
-          <label for="user-comment" class="modal-label">Comment</label>
-          <textarea
-            name="user-comment"
-            id="user-comment"
-            class="modal-textarea"
-            placeholder="Text input"
-          ></textarea>
+          <div class="modal-field">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="modal-check-text"
+              ><span class="modal-check-item">
+                <svg class="chek-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-chek"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
