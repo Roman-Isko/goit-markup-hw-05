@@ -528,10 +528,16 @@ img {
     background-color: #E7E9FC;
     stroke-width: 1px;
     stroke: #000000;
+    fill: #2E2F42;
+    cursor: pointer;
 }
 
-.icon-close {
-    fill: #2E2F42;
+.modal-close:hover,
+.modal-close:focus {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #c8c9c9;
 }
 
 .modal-title {
